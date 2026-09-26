@@ -1,0 +1,14 @@
+prompt 1: can you explain the project first. i will provide a attached image of instruction
+
+prompt 2: i am build in a next.js(JS not TS) project using tailwind css and lucide react.js.
+now give me a Home page following the instruction
+
+prompt 3: Now give me a order data.js file following the instruction
+
+prompt 4: i am build in a next.js(JS not TS) project using tailwind css and lucide react.js.
+now give me a My order page
+
+prompt 5: i am build in a next.js(JS not TS) project using tailwind css and lucide react.js.
+now give me a order details page
+
+prompt 6: for my project, now give me a loading.jsx file.
