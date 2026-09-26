@@ -1,36 +1,257 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📦 Order Tracker System
 
-## Getting Started
+A modern and responsive **Order Tracking System** built for an e-commerce application. The system allows users to view their order information and track the current delivery status through a clear and user-friendly interface.
 
-First, run the development server:
+## ✨ Features
+
+* 📦 Order tracking interface
+* 🚚 Real-time-style order status visualization
+* 📍 Order progress tracking
+* 🔄 Dynamic order status updates
+* 📱 Fully responsive design
+* 🎨 Modern and clean UI
+* ⚡ Fast and optimized Next.js application
+* 🧩 Reusable React components
+* 🎯 Status-based UI rendering
+* 🛒 E-commerce-focused order information
+
+### Supported Order Statuses
+
+The system currently supports:
+
+* **Processing** — Order has been received and is being processed.
+* **Shipped** — Order has been shipped and is on the way.
+* **Out for Delivery** — Order is currently out for delivery.
+* **Delivered** — Order has been successfully delivered.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* **Next.js**
+* **React.js**
+* **JavaScript**
+* **Tailwind CSS**
+* **HTML5**
+* **CSS3**
+
+### Tools
+
+* **Git**
+* **GitHub**
+* **VS Code**
+* **npm**
+
+---
+
+## 📂 Project Structure
+
+```text
+order-tracker/
+├── public/
+│
+│
+├── src/
+│   ├── app/
+│   │   ├── page.jsx
+│   │   ├── layout.jsx
+│   │   ├── globals.css
+│   │   └── orders
+│   │        ├──page.js
+│   │        └──[id]/
+│   │           ├──page.js
+│   │
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── StatusBadge.jsx
+│   │   ├── Timeline.jsx
+│   │   └── TrackingClient.jsx
+│   │
+│   ├── lib/
+│   │   └── data.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── next.config.js
+├── postcss.config.mjs
+├── tailwind.config.js
+└── README.md
+```
+
+> The exact structure may vary depending on the implementation.
+
+---
+
+# 🚀 Installation Guide
+
+Follow the steps below to run the project locally.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/fardinfaruk-bd/order_tracking_system.git
+```
+
+Then move into the project directory:
+
+```bash
+cd order-tracker
+```
+
+---
+
+## 2. Install Dependencies
+
+Install all required npm packages:
+
+```bash
+npm install
+```
+
+---
+
+## 3. Start the Development Server
+
+Run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will start on:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open the URL in your browser.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 🧑‍💻 Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the project in development mode:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+To create a production build:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To start the production server:
+
+```bash
+npm start
+```
+
+To run the linter:
+
+```bash
+npm run lint
+```
+
+---
+
+
+# 📱 Responsive Design
+
+The Order Tracker System is designed to work across different screen sizes:
+
+* 📱 Mobile
+* 📱 Tablet
+* 💻 Laptop
+* 🖥️ Desktop
+
+The UI uses **Tailwind CSS responsive utilities** to provide a consistent experience across devices.
+
+---
+
+# 🔄 Order Status Flow
+
+The order progresses through different stages:
+
+```text
+Processing
+    ↓
+Shipped
+    ↓
+Out for Delivery
+    ↓
+Delivered
+```
+
+Each status is visually represented in the tracking interface so users can easily understand the current state of their order.
+
+---
+
+# 🎯 Future Improvements
+
+Possible future improvements include:
+
+* [ ] Backend API integration
+* [ ] Database integration
+* [ ] User authentication
+* [ ] Admin order management
+* [ ] Real-time order tracking
+* [ ] Order history
+* [ ] Email notifications
+* [ ] SMS notifications
+* [ ] Delivery location tracking
+* [ ] Estimated delivery time
+* [ ] Order search and filtering
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+### 1. Fork the repository
+
+### 2. Create a new branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+### 3. Make your changes
+
+### 4. Commit your changes
+
+```bash
+git add .
+git commit -m "Add new feature"
+```
+
+### 5. Push the branch
+
+```bash
+git push origin feature/new-feature
+```
+
+### 6. Create a Pull Request
+
+---
+
+# 📄 License
+
+This project is created for learning and development purposes.
+
+---
+
+## 👨‍💻 Author
+
+**Md Fardin Faruk**
+
+Frontend Developer
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
